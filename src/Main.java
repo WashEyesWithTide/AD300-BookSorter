@@ -23,15 +23,15 @@ public class Main{
         books.forEach(System.out::println);
         
         System.out.println("\nBooks sorted by author:");
-        books.sort(new BookAuthorComparator());
+        books.sort(new BookAuthorComparator()); //sorts by author
         books.forEach(System.out::println);
 
         System.out.println("\nBooks sorted by publication year:");
-        books.sort(new BookYearComparator());
+        books.sort(new BookYearComparator()); // sorts by publication year
         books.forEach(System.out::println);
 
         System.out.println("\nBooks sorted by author, then title:");
-        books.sort(new AuthorTitleComparator());
+        books.sort(new AuthorTitleComparator()); // sorts by author then title
         books.forEach(System.out::println);
     }
 }
